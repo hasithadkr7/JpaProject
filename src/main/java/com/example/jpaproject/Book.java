@@ -18,6 +18,7 @@ public class Book {
     )
     @Column(
             name = "id",
+            nullable = false,
             updatable = false
     )
     private Long id;

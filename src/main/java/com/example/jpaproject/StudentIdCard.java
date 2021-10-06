@@ -17,6 +17,7 @@ public class StudentIdCard {
     )
     @Column(
             name = "id",
+            nullable = false,
             updatable = false
     )
     private Long id;
@@ -27,6 +28,11 @@ public class StudentIdCard {
     )
     private Long studentId;
 
+    @Column(
+            name = "card_number",
+            nullable = false,
+            columnDefinition = "TEXT"
+    )
     private String cardNumber;
 
     public StudentIdCard(Long studentId, String cardNumber) {
